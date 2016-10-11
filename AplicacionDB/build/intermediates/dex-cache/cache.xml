@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_5f4f4e22accb853fdadc507fe078a8c63677c292.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_420ba9aaa629eb6089e8d9756f2a28139b6558ac.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\libs\dropbox-android-sdk-1.6.3.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="986e7a58e925c6f91b88ae8d3224a0550b65acc7">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\dropbox-android-sdk-1.6.3_5fe824007723f16075ae02adc0113b05c6c5e7ea.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\libs\json_simple-1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\json_simple-1.1_21270dd5fd7cf2cc593dfd28d41e9b32e7d7022a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_efe7784dade62b368169b70d582e9d1cb1fa10cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c6d8c88a0bf1d88c53aaa2dd85f661905e7328dc">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\instant-run_2566f9e69db96f1fb8c3c991eb14d8abba58e56e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_ab0e96e7967d5140295ccf408893871cd0619a7d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6ab73f2d7e20a0b542cc078b5998b16cc3a978eb">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_7a533c2c09cd5a1345cf96ae15729a3941ff5f3f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_d6f3e0c0dbbef60b065e7269f0d7e921f1bd73b1.jar" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Usuario DELL\Documents\AplicacionDB\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_fc18a0fdc80391aaf9a93e629f1a6f03cf6a9cf4.jar" />
+    </item>
+
+</items>
