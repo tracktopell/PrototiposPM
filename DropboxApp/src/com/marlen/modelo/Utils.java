@@ -8,4 +8,9 @@ public static final String cuenta_1 = "Cuenta 1";
 public static final String SUBIR_ARCHIVOS  = "Subir Archivos";
 public static final String BAJAR_ARCHIVOS = "Bajar Archivos";
 public static final String BIENVENIDO = "Bienvenido";
+public static final String SUBIR = "Subir";
+public static final String BAJAR = "Bajar";
+public static final String SELECCIONAR_ARCHIVOS = "Seleccionar Archivos";
+public static final String SELECCIONAR = "Seleccionar";
+
 }

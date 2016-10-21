@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 
 import com.dropbox.core.DbxClient;
 import com.dropbox.core.DbxException;
-import com.marlen.modelo.Autentificacion;
+import com.marlen.modelo.ModeloDropBox;
 import com.marlen.modelo.ModeloVentana;
 import com.marlen.modelo.Utils;
 import com.marlen.vista.MenuPrincipal;
@@ -35,10 +35,10 @@ private DbxClient dbxClient;
 		String url = "";
 		
 		MenuPrincipal MP = MenuPrincipal.instanciaMP();
-		Autentificacion autentificacion = Autentificacion.instanciaAutentificacion();
+		ModeloDropBox autentificacion = ModeloDropBox.instanciaAutentificacion();
 		if(button==vista.getBtnCuenta1()){
 			modelo.abrirVentana(MP);
-			ControllerMenuPrincipal login = new ControllerMenuPrincipal(MP, autentificacion);
+			ControllerMenuPrincipal login = new ControllerMenuPrincipal(MP, modelo);
 		
 			try {
 			
@@ -51,7 +51,6 @@ private DbxClient dbxClient;
 				
 				
 			} catch (IOException | DbxException e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 		}
