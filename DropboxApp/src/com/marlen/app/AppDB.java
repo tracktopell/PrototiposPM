@@ -1,0 +1,21 @@
+package com.marlen.app;
+
+import com.marlen.controlador.ControllerMenuPrincipal;
+import com.marlen.controlador.ControllerMenu;
+import com.marlen.modelo.ModeloVentana;
+import com.marlen.modelo.Utils;
+
+import com.marlen.vista.Menu;
+
+public class AppDB {
+
+	public static void main(String[] args) {
+		Menu vista = Menu.instanciaMenu();
+		ModeloVentana modelo = new ModeloVentana();
+		ControllerMenu controller = new ControllerMenu(vista, modelo);
+		vista.setVisible(true);
+		
+
+	}
+
+}
