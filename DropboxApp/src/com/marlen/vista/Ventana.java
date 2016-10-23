@@ -22,6 +22,7 @@ protected JLabel lblToken = new JLabel(Utils.ingresarToken);
 protected JTextField txtToken = new JTextField();
 protected JButton btnIngresar = new JButton(Utils.ingresar);
 protected JButton btnCuenta1 = new JButton(Utils.cuenta_1);
+protected JButton btnCuenta2 = new JButton(Utils.CUENTA_2);
 protected JButton btnSubirArchivo = new JButton(Utils.SUBIR_ARCHIVOS);
 protected JButton btnBajarArchivos = new JButton(Utils.BAJAR_ARCHIVOS);
 protected JLabel lblBienvenido = new JLabel(Utils.BIENVENIDO);
@@ -53,6 +54,7 @@ public void listenerAutenficacion(ActionListener listener){
 
 public void listenerMenu(ActionListener listener){
 	btnCuenta1.addActionListener(listener);
+	btnCuenta2.addActionListener(listener);
 }
 
 public void listenerUpload(ActionListener listener){
@@ -129,6 +131,12 @@ public JTextArea getTextArea() {
 }
 public void setTextArea(JTextArea textArea) {
 	this.textArea = textArea;
+}
+public JButton getBtnCuenta2() {
+	return btnCuenta2;
+}
+public void setBtnCuenta2(JButton btnCuenta2) {
+	this.btnCuenta2 = btnCuenta2;
 }
 
 

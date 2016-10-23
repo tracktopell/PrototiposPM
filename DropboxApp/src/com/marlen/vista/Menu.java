@@ -16,7 +16,11 @@ public static  Menu instanciaMenu() {
 	@Override
 	public void cargarControladores() {
 		btnCuenta1.setBounds(10, 30, 100, 50);
+		btnCuenta2.setBounds(10, 90, 100, 50);
 		contenedor.add(btnCuenta1);
+		contenedor.add(btnCuenta2);
+		
+		
 		
 	}
 	

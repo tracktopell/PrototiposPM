@@ -17,7 +17,7 @@ public static VentanaSubida instanciaVentanaUpload(){
 @Override
 public void cargarControladores() {
 	lblSeleccionarArchivos.setBounds(120, 30, 300, 10);
-	urlArchivo.setToolTipText("Inserta la ruta del fichero de audio");
+	urlArchivo.setToolTipText("Inserta la ruta del fichero");
 	urlArchivo.setBounds(52, 26, 209, 20);
 	btnSeleccionar.setBounds(288, 25, 109, 23);
 	textArea.setLineWrap(true);

@@ -2,6 +2,9 @@ package com.marlen.controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+
+import javax.swing.JOptionPane;
 
 import com.marlen.modelo.ModeloDropBox;
 import com.marlen.modelo.ModeloImagenes;
@@ -25,12 +28,20 @@ public class ControllerUploadFiles implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		Object button = e.getSource();
 		ModeloDropBox model = ModeloDropBox.instanciaAutentificacion();
-		ModeloImagenes modelImage = new ModeloImagenes();
+		ModeloImagenes modelImage = ModeloImagenes.instanceImagens();
 		if (button==vista.getBtnSubir()) {
-			model.uploadFiles();
+			
+			vista.textArea.setText(model.uploadFiles());
+			
 		} 
 		else if(button==vista.getBtnSeleccionar()){
-			modelImage.subirArchivos();
+			try {
+		
+				vista.textArea.append(modelImage.subirArchivos());
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 		
 	}
