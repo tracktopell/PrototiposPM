@@ -26,13 +26,14 @@ protected JButton btnCuenta2 = new JButton(Utils.CUENTA_2);
 protected JButton btnSubirArchivo = new JButton(Utils.SUBIR_ARCHIVOS);
 protected JButton btnBajarArchivos = new JButton(Utils.BAJAR_ARCHIVOS);
 protected JLabel lblBienvenido = new JLabel(Utils.BIENVENIDO);
-protected JButton btnSubir = new JButton(Utils.SUBIR);
+
 public static JTextField txtUsuario = new JTextField();
-protected JLabel lblSeleccionarArchivos = new JLabel(Utils.SELECCIONAR_ARCHIVOS);
-public JTextField urlArchivo = new JTextField();
-protected JButton btnSeleccionar = new JButton(Utils.SELECCIONAR);
-public JTextArea textArea = new JTextArea();
-protected JScrollPane scroll=new JScrollPane(textArea);
+
+public static JTextArea textArea = new JTextArea();
+protected JScrollPane scroll=new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+
+protected JLabel lblArchivoExistentes = new JLabel(Utils.ARCHIVOS_EXISTENTES);
+protected JButton btnBajar = new JButton(Utils.BAJAR);
 
 Container contenedor = getContentPane();
 public Ventana(String title, int width, int height) {
@@ -57,10 +58,11 @@ public void listenerMenu(ActionListener listener){
 	btnCuenta2.addActionListener(listener);
 }
 
+
 public void listenerUpload(ActionListener listener){
-	btnSubir.addActionListener(listener);
-	btnSeleccionar.addActionListener(listener);
+	btnBajar.addActionListener(listener);
 }
+
 
 public JLabel getLblToken() {
 	return lblToken;
@@ -108,24 +110,7 @@ public JButton getBtnBajarArchivos() {
 public void setBtnBajarArchivos(JButton btnBajarArchivos) {
 	this.btnBajarArchivos = btnBajarArchivos;
 }
-public JButton getBtnSubir() {
-	return btnSubir;
-}
-public void setBtnSubir(JButton btnSubir) {
-	this.btnSubir = btnSubir;
-}
-public JTextField getUrlArchivo() {
-	return urlArchivo;
-}
-public void setUrlArchivo(JTextField urlArchivo) {
-	this.urlArchivo = urlArchivo;
-}
-public JButton getBtnSeleccionar() {
-	return btnSeleccionar;
-}
-public void setBtnSeleccionar(JButton btnSeleccionar) {
-	this.btnSeleccionar = btnSeleccionar;
-}
+
 public JTextArea getTextArea() {
 	return textArea;
 }
@@ -138,6 +123,13 @@ public JButton getBtnCuenta2() {
 public void setBtnCuenta2(JButton btnCuenta2) {
 	this.btnCuenta2 = btnCuenta2;
 }
+public JButton getBtnBajar() {
+	return btnBajar;
+}
+public void setBtnBajar(JButton btnBajar) {
+	this.btnBajar = btnBajar;
+}
+
 
 
 

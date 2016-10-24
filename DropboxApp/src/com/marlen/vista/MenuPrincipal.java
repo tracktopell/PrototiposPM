@@ -19,9 +19,11 @@ public final class MenuPrincipal extends Ventana{
 		lblBienvenido.setBounds(30, 30, 300, 10);
 		txtUsuario.setBounds(100, 30, 200,25);
 		btnSubirArchivo.setBounds(160, 100, 120, 60);
+		btnBajarArchivos.setBounds(160, 200, 120, 60);
 		contenedor.add(lblBienvenido);
 		contenedor.add(txtUsuario);
 		contenedor.add(btnSubirArchivo);
+		contenedor.add(btnBajarArchivos);
 		
 		
 	}

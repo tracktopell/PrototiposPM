@@ -1,0 +1,44 @@
+The following issue has been SUBMITTED. 
+====================================================================== 
+http://perfumeriamarlen.com.mx/mantis/view.php?id=10 
+====================================================================== 
+Reported By:                mantis
+Assigned To:                ggomez
+====================================================================== 
+Project:                    Sistema de Almacen l30
+Issue ID:                   10
+Category:                   Sistema de CAJA Sucursal
+Reproducibility:            always
+Severity:                   minor
+Priority:                   normal
+Status:                     assigned
+====================================================================== 
+Date Submitted:             2016-09-07 13:46 CDT
+Last Modified:              2016-09-07 13:46 CDT
+====================================================================== 
+Summary:                    Instalar ambiente de desarrollo para Aplicacion
+Java8 Swing
+Description: 
+En el Equipo recien asignado, instalar y configurar para desarrollar la
+aplicacion de caja.
+
+* Como administrador:
+- Instalar Oracle JDK8*
+- Instalar MySQL server/client*Pendiente
+- Instalar maven3*
+- Instalar NETBeans 8.1+*
+- Instalar Android Studio 2.1+*Pendiente
+* Con la cuenta de suaurio linux : ggomez
+- Instalar y Configurar Thunderbird *Pendiente
+
+
+
+====================================================================== 
+
+Issue History 
+Date Modified    Username       Field                    Change               
+====================================================================== 
+2016-09-07 13:46 mantis         New Issue                                    
+2016-09-07 13:46 mantis         Status                   new => assigned     
+2016-09-07 13:46 mantis         Assigned To               => ggomez          
+======================================================================

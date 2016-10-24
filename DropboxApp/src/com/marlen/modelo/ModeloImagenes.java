@@ -46,13 +46,14 @@ public static ModeloImagenes instanceImagens(){
 			
 					for(File file: ficheros){
 						String name = file.getName();
-						File	 files = new File("uploads/" +name);
+						File files = new File("uploads/" +name);
 						
-						 System.out.println(files.getPath());
 						InputStream in = new FileInputStream(file);
-						  OutputStream out = new FileOutputStream(files);
-								System.out.println(file.getName());		
-								msg = file.getName() + "\n";
+						  OutputStream out = new FileOutputStream(files);	
+						  msg = file.getName();
+						  System.out.println(msg);
+							VentanaSubida.txtAUpload.append(msg + "\n");
+								
 						  byte[] buf = new byte[1024];
 						  int len;
 
@@ -71,5 +72,24 @@ public static ModeloImagenes instanceImagens(){
 		
 		return msg;
 }
+	
+	public void archivosExistentes(){
+		// Aquí la carpeta donde queremos buscar
+        String path = "uploads"; 
+
+        String files;
+        File folder = new File(path);
+        File[] listOfFiles = folder.listFiles(); 
+
+        for (int i = 0; i < listOfFiles.length; i++)         {
+
+            if (listOfFiles[i].isFile())             {
+                files = listOfFiles[i].getName();
+                System.out.println(files);
+               VentanaSubida.txtAUpload.append(files + "\n");
+            }
+        }
+    }
+	
 	
 }

@@ -13,5 +13,6 @@ public static final String SUBIR = "Subir";
 public static final String BAJAR = "Bajar";
 public static final String SELECCIONAR_ARCHIVOS = "Seleccionar Archivos";
 public static final String SELECCIONAR = "Seleccionar";
+public static final String ARCHIVOS_EXISTENTES = "Archivos existentes en la carpeta";
 
 }

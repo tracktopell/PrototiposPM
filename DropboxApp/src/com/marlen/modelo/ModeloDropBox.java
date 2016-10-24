@@ -22,6 +22,7 @@ import com.dropbox.core.DbxException;
 import com.dropbox.core.DbxRequestConfig;
 import com.dropbox.core.DbxWebAuthNoRedirect;
 import com.dropbox.core.DbxWriteMode;
+import com.marlen.vista.VentanaDescarga;
 
 
 public final class ModeloDropBox {
@@ -92,7 +93,8 @@ private ModeloDropBox() {
 	/**
 	* Method that allows us to get all the files
 	*/
-	public void downloadFiles(){
+	public String downloadFiles(){
+		String message = "";
 		try{
 			
 			DbxEntry.WithChildren listing = dbxClient
@@ -105,13 +107,15 @@ private ModeloDropBox() {
 		FileOutputStream fileOutputStream = new FileOutputStream(file);
 		String file1 = child.path;
 		dbxClient.getFile("/" + file1, null, fileOutputStream);
+		message = "Download File";
 		
-		System.out.println("Download File");
 		
 		}
 	} catch (Exception e) {
-		e.printStackTrace();
+		message = String.format("Error: %s", e);
+		
 	}
+		return message;
 	
 }	
 	public String listFiles(){
@@ -120,6 +124,7 @@ private ModeloDropBox() {
 			DbxEntry.WithChildren listing = dbxClient.getMetadataWithChildren("/Carpeta");
 			for(DbxEntry child: listing.children){
 				message=child.name;
+				VentanaDescarga.textArea.append(message + "\n");
 			}
 		} catch (DbxException e) {
 			message = String.format("Error: %s", e);

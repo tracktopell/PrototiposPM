@@ -31,15 +31,17 @@ public class ControllerUploadFiles implements ActionListener{
 		ModeloImagenes modelImage = ModeloImagenes.instanceImagens();
 		if (button==vista.getBtnSubir()) {
 			
-			vista.textArea.setText(model.uploadFiles());
+		model.uploadFiles();
+		
 			
 		} 
 		else if(button==vista.getBtnSeleccionar()){
+			
 			try {
 		
-				vista.textArea.append(modelImage.subirArchivos());
+				modelImage.subirArchivos();
 			} catch (IOException e1) {
-				// TODO Auto-generated catch block
+				
 				e1.printStackTrace();
 			}
 		}

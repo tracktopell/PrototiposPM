@@ -9,6 +9,8 @@ import javax.swing.JTextField;
 
 import com.dropbox.core.DbxClient;
 import com.dropbox.core.DbxException;
+import com.marlen.modelo.Cuenta1;
+import com.marlen.modelo.Cuenta2;
 import com.marlen.modelo.ModeloDropBox;
 import com.marlen.modelo.ModeloVentana;
 import com.marlen.modelo.Utils;
@@ -36,44 +38,19 @@ private DbxClient dbxClient;
 		String url = "";
 		
 		MenuPrincipal MP = MenuPrincipal.instanciaMP();
-		ModeloDropBox autentificacion = ModeloDropBox.instanciaAutentificacion();
+		Cuenta1 cuenta1 = Cuenta1.instanciaCuenta1();
+		Cuenta2 cuenta2 = Cuenta2.instanciaCuenta2();
 		if(button==vista.getBtnCuenta1()){
 			modelo.abrirVentana(MP);
 			ControllerMenuPrincipal login = new ControllerMenuPrincipal(MP, modelo);
-		
-			try {
-				 String APP_KEY = "07a9htv9wrupcoy"; //appKey
-				 String APP_SECRET = "zo0ob0m86b4ty5x"; //appSecret
-				 String NAMEAPP = "AplicacionDB"; //name of Application
-				 String TOKEN = "DQahuebkuecAAAAAAAACipYqQxdHymvy0eJHpCUDdLWV6WNwtaW2OQ4SvicPrYYY";
-				dbxClient = autentificacion.authDropbox(APP_KEY, APP_SECRET, NAMEAPP, TOKEN);
-		String nombreUsuario	=	dbxClient.getAccountInfo().displayName;
-		JOptionPane.showMessageDialog(null, nombreUsuario);
-		vista.txtUsuario.setText(nombreUsuario);
-		vista.txtUsuario.disable();
-				
-				
-			} catch (IOException | DbxException e1) {
-				e1.printStackTrace();
-			}
+		cuenta1.start();
+		;
+			
 		} else if(button==vista.getBtnCuenta2()){
 			modelo.abrirVentana(MP);
 			ControllerMenuPrincipal login = new ControllerMenuPrincipal(MP, modelo);
-			try{
-			 String APP_KEY = "nf7owatv5x1q1kt"; //appKey
-			 String APP_SECRET = "mn8kdhecnnw6uir"; //appSecret
-			 String NAMEAPP = "AplicacionDB1"; //name of Application
-			 String TOKEN = "oyOfVGSfR2AAAAAAAAAAl1ZyybzoDQJFRfM0k9SVPCHcXFHfcCiOxf94QbUAUgsO";
-			dbxClient = autentificacion.authDropbox(APP_KEY, APP_SECRET, NAMEAPP, TOKEN);
-	String nombreUsuario	=	dbxClient.getAccountInfo().displayName;
-	JOptionPane.showMessageDialog(null, nombreUsuario);
-	vista.txtUsuario.setText(nombreUsuario);
-	vista.txtUsuario.disable();
-			} catch (IOException | DbxException e1) {
-				e1.printStackTrace();
-			}
-		}
-		
+			cuenta2.start();
+	}
 	}
 
 }
