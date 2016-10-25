@@ -12,8 +12,6 @@ public final class MenuPrincipal extends Ventana{
 		return menuPrincipal;
 	}
 	
-	
-
 	@Override
 	public void cargarControladores() {
 		lblBienvenido.setBounds(30, 30, 300, 10);

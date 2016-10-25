@@ -13,6 +13,10 @@ import javax.swing.JTextField;
 import com.marlen.modelo.Utils;
 
 public  class VentanaSubida extends JFrame{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	protected JButton btnSubir = new JButton(Utils.SUBIR);
 	protected JLabel lblSeleccionarArchivos = new JLabel(Utils.SELECCIONAR_ARCHIVOS);
 	public JTextField urlArchivo = new JTextField();
@@ -30,6 +34,7 @@ public  class VentanaSubida extends JFrame{
 		cargarControladores();
 		
 	}
+	@SuppressWarnings("deprecation")
 	public void cargarControladores(){
 		lblSeleccionarArchivos.setBounds(120, 30, 300, 10);
 		
@@ -41,7 +46,7 @@ public  class VentanaSubida extends JFrame{
 		txtAUpload.disable();
 		scroll1.setBounds(52, 76, 250, 200);
 		btnSubir.setBounds(10, 290, 120, 60);
-		contenedor.add(urlArchivo);
+		//contenedor.add(urlArchivo);
 		//contenedor.add(lblSeleccionarArchivos);
 		//contenedor.add(txtAUpload);
 		contenedor.add(scroll1);

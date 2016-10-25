@@ -43,13 +43,14 @@ private DbxClient dbxClient;
 		if(button==vista.getBtnCuenta1()){
 			modelo.abrirVentana(MP);
 			ControllerMenuPrincipal login = new ControllerMenuPrincipal(MP, modelo);
-		cuenta1.start();
-		;
+			cuenta1.autentificacionCuenta1();
+		
+		
 			
 		} else if(button==vista.getBtnCuenta2()){
 			modelo.abrirVentana(MP);
 			ControllerMenuPrincipal login = new ControllerMenuPrincipal(MP, modelo);
-			cuenta2.start();
+			cuenta2.autentificacionCuenta2();
 	}
 	}
 

@@ -1,7 +1,5 @@
 package com.marlen.vista;
 
-import com.marlen.modelo.Utils;
-
 public final class Menu extends Ventana{
 
 private static Menu menu = new Menu("Menu", 320,430);
